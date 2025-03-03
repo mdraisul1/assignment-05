@@ -9,7 +9,7 @@
     <title>Assignment 5</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#F4F7FF]">
+<body class="bg-[#F4F7FF]" id="body-bg">
     <!-- header section start -->
     <header class="w-[1024px] mx-auto bg-white mt-10 rounded-md">
         <nav class="flex items-center justify-between px-5 py-3">
@@ -18,8 +18,8 @@
                 <p class="text-xl">Dev<spans class="font-bold">Board</spans></p>
             </div>
             <div class="flex items-center gap-6">
-                <i class="ri-checkbox-line text-green-700 text-xl font-bold bg-[#F4F7FF] py-1 px-4 rounded-md"><span class="ml-2 text-[#000]">23</span></i>
-                <button><img class="w-9 bg-[#F4F7FF] p-1 cursor-pointer rounded-full" src="./assets/theme-btn.png" alt="theme button"></button>
+                <i class="ri-checkbox-line text-green-700 text-xl font-bold bg-[#F4F7FF] py-1 px-4 rounded-full"><span class="ml-2 text-[#000]">23</span></i>
+                <button id="btn-btn-bg"><img class="w-9 bg-[#F4F7FF] p-1 cursor-pointer rounded-full" src="./assets/theme-btn.png" alt="theme button"></button>
             </div>
         </nav>
     </header>
@@ -173,5 +173,7 @@
         </section>
     </main>
     <!-- main section end  -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
