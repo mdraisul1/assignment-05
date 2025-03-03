@@ -8,6 +8,14 @@
     rel="stylesheet"/>
     <title>Assignment 5</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        button:disabled {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
 </head>
 <body class="bg-[#F4F7FF]" id="body-bg">
     <!-- header section start -->
@@ -18,7 +26,7 @@
                 <p class="text-xl">Dev<spans class="font-bold">Board</spans></p>
             </div>
             <div class="flex items-center gap-6">
-                <i class="ri-checkbox-line text-green-700 text-xl font-bold bg-[#F4F7FF] py-1 px-4 rounded-full"><span class="ml-2 text-[#000]">23</span></i>
+                <i class="ri-checkbox-line text-green-700 text-xl font-bold bg-[#F4F7FF] py-1 px-4 rounded-full"><span id="number-one" class="ml-2 text-[#000]">23</span></i>
                 <button id="btn-btn-bg"><img class="w-9 bg-[#F4F7FF] p-1 cursor-pointer rounded-full" src="./assets/theme-btn.png" alt="theme button"></button>
             </div>
         </nav>
@@ -38,7 +46,7 @@
                             <i class="ri-checkbox-line text-green-700 text-2xl font-bold bg-[#F4F7FF] py-1 px-4 rounded-md"></i>
                             <div>
                                 <p>Task Assigned</p>
-                                <span class="text-xl font-bold">06</span>
+                                <span id="number-two" class="text-xl font-bold">06</span>
                             </div>
                         </div>
                         <!-- part 2 -->
@@ -47,9 +55,9 @@
                             <p class="text-xl font-semibold text-white">Discover Something<br> New Today!</p>
                         </div>
                         <!-- part 3 -->
-                        <div class="w-3/12 bg-[#F4F7FF] flex items-center justify-center gap-4 py-5 rounded-md">
+                        <div class="w-3/12 bg-[#F4F7FF] flex items-center justify-center gap-4 py-5 px-4 rounded-md">
                             <img class="w-6" src="./assets/calender.png" alt="board">
-                            <span class="text-base font-semibold">Wed ,<br>Jul 28 2025 </span>
+                            <span id="current-date" class="text-base font-semibold">Wed ,<br>Jul 28 2025 </span>
                         </div>
                     </div>
                     <!-- section two -->
@@ -64,9 +72,9 @@
                             <div class="flex justify-between items-center mt-4">
                                 <div>
                                     <span class="text-gray-500 text-sm">Deadline</span>
-                                    <p class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
+                                    <p id="current-date-one" class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
                                 </div>
-                                <button class="bg-[#3752FD] text-white text-sm font-semibold px-3 py-1 rounded-lg shadow-md">
+                                <button id="btn-completed" class="bg-[#3752FD] text-white text-sm font-semibold cursor-pointer px-3 py-1 rounded-lg shadow-md">
                                     Completed
                                 </button>
                             </div>
@@ -83,7 +91,7 @@
                                     <span class="text-gray-500 text-sm">Deadline</span>
                                     <p class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
                                 </div>
-                                <button class="bg-[#3752FD] text-white text-sm font-semibold px-3 py-1 rounded-lg shadow-md">
+                                <button id="btn-completed-two" class="bg-[#3752FD] text-white text-sm font-semibold cursor-pointer px-3 py-1 rounded-lg shadow-md">
                                     Completed
                                 </button>
                             </div>
@@ -100,7 +108,7 @@
                                     <span class="text-gray-500 text-sm">Deadline</span>
                                     <p class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
                                 </div>
-                                <button class="bg-[#3752FD] text-white text-sm font-semibold px-3 py-1 rounded-lg shadow-md">
+                                <button id="btn-completed-three" class="bg-[#3752FD] text-white text-sm font-semibold cursor-pointer px-3 py-1 rounded-lg shadow-md">
                                     Completed
                                 </button>
                             </div>
@@ -117,7 +125,7 @@
                                     <span class="text-gray-500 text-sm">Deadline</span>
                                     <p class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
                                 </div>
-                                <button class="bg-[#3752FD] text-white text-sm font-semibold px-3 py-1 rounded-lg shadow-md">
+                                <button id="btn-completed-four" class="bg-[#3752FD] text-white text-sm font-semibold cursor-pointer px-3 py-1 rounded-lg shadow-md">
                                     Completed
                                 </button>
                             </div>
@@ -134,7 +142,7 @@
                                     <span class="text-gray-500 text-sm">Deadline</span>
                                     <p class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
                                 </div>
-                                <button class="bg-[#3752FD] text-white text-sm font-semibold px-3 py-1 rounded-lg shadow-md">
+                                <button id="btn-completed-five" class="bg-[#3752FD] text-white text-sm font-semibold cursor-pointer px-3 py-1 rounded-lg shadow-md">
                                     Completed
                                 </button>
                             </div>
@@ -151,11 +159,11 @@
                                     <span class="text-gray-500 text-sm">Deadline</span>
                                     <p class="text-[#0D253C] text-[14px] font-semibold">21 March 2025</p>
                                 </div>
-                                <button class="bg-[#3752FD] text-white text-sm font-semibold px-3 py-1 rounded-lg shadow-md">
+                                <button id="btn-completed-six" class="bg-[#3752FD] text-white text-sm font-semibold cursor-pointer px-3 py-1 rounded-lg shadow-md">
                                     Completed
                                 </button>
                             </div>
-                        </div>                     
+                        </div>                    
                     </div>
                 </div>
             </div>
@@ -173,7 +181,6 @@
         </section>
     </main>
     <!-- main section end  -->
-
     <script src="js/script.js"></script>
 </body>
 </html>
