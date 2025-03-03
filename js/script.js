@@ -160,4 +160,71 @@ function getDateOne(){
     return `${day} ${month} ${year}`;
 }
 
+document.getElementById('btn-completed').addEventListener('click', function(){
+    const paragraph = document.getElementById('heading-one').innerText;
+    // console.log(paragraph);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = paragraph;
+    newParagraph.classList.add('text-gray-700', 'text-base', 'mt-10', 'mb-6');
 
+    document.getElementById('paragraph').appendChild(newParagraph);
+})
+
+document.getElementById('btn-completed-two').addEventListener('click', function(){
+    const paragraph = document.getElementById('heading-two').innerText;
+    // console.log(paragraph);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = paragraph;
+    newParagraph.classList.add('text-gray-700', 'text-base', 'mt-10', 'mb-6');
+
+    document.getElementById('paragraph').appendChild(newParagraph);
+})
+
+document.getElementById('btn-completed-three').addEventListener('click', function(){
+    const paragraph = document.getElementById('heading-three').innerText;
+    // console.log(paragraph);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = paragraph;
+    newParagraph.classList.add('text-gray-700', 'text-base', 'mt-10', 'mb-6');
+
+    document.getElementById('paragraph').appendChild(newParagraph);
+})
+
+document.getElementById('btn-completed-four').addEventListener('click', function(){
+    const paragraph = document.getElementById('heading-four').innerText;
+    // console.log(paragraph);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = paragraph;
+    newParagraph.classList.add('text-gray-700', 'text-base', 'mt-10', 'mb-6');
+
+    document.getElementById('paragraph').appendChild(newParagraph);
+})
+
+document.getElementById('btn-completed-five').addEventListener('click', function(){
+    const paragraph = document.getElementById('heading-five').innerText;
+    // console.log(paragraph);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = paragraph;
+    newParagraph.classList.add('text-gray-700', 'text-base', 'mt-10', 'mb-6');
+
+    document.getElementById('paragraph').appendChild(newParagraph);
+})
+
+document.getElementById('btn-completed-six').addEventListener('click', function(){
+    const paragraph = document.getElementById('heading-six').innerText;
+    // console.log(paragraph);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = paragraph;
+    newParagraph.classList.add('text-gray-700', 'text-base', 'mt-4', 'mb-3');
+
+    document.getElementById('paragraph').appendChild(newParagraph);
+})
+
+
+document.getElementById('clear-history').addEventListener('click', function() {
+    document.getElementById('paragraph').innerHTML = '';
+});
+
+document.getElementById('discover').addEventListener('click', function(){
+    window.location.href = "blog.html";
+})

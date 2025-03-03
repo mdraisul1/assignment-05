@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Assignment 5</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]" id="body-bg">
+    <header class="w-[1024px] mx-auto bg-white mt-10 rounded-md">
+        <nav class="flex items-center justify-between px-5 py-3">
+            <div class="flex items-center gap-2">
+                <a href="#"><img class="w-10" src="./assets/logo.png" alt="logo"></a>
+                <p class="text-xl">Dev<spans class="font-bold">Board</spans></p>
+            </div>
+            <div class="flex items-center gap-6">
+                <button id="btn-back" class="bg-blue-700 text-white py-2 px-4 rounded-lg cursor-pointer">Back To Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main class="w-[1024px] mx-auto bg-white mt-10 rounded-md">
+        <div class="mb-2 p-5">
+            <p>Question-1: What are the different ways to select an element in the DOM?</p>
+            <p> <strong>ANS:</strong> DOM a element select korar jonno bivinno poddhoti royeche . 1.querySelectorAll. 2.getElementsByClassName 3.getElementById 4.querySelector 5.getElementByTagName</p>
+        </div>
+        <div class="mb-2 p-5">
+            <p>Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <p> <strong>ANS:</strong> HTML ar moddhe thaka tottho porte ba set korte beharito hoi.</p>
+        </div>
+        <div class="mb-2 p-5">
+            <p>Question-3: What is event delegation in the DOM?</p>
+            <p> <strong>ANS:</strong> event delegation akti koushol je khane perent upadan event handler grohon kore and tar moddhe thaka chaild upadan gulo event ar jonno kaj kore</p>
+        </div>
+        <div class="mb-2 p-5">
+            <p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <p> <strong>ANS:</strong> Javascript DOM? bebohar kore element create, add , and remove kora jai khub shohoje. 1.createElement ar madhome akta notun element create kora jai.. 2.add ar maddhome akti notun class add kora jai.. 3.remove ar maddhome je kono id ba class remove kora jai..</p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('btn-back').addEventListener('click', function(){
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+</html>
